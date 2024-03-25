@@ -35,7 +35,20 @@
       )
     )
   )
-  1. $a^ast (b^+ a^+ b)^ast a^ast$
+  1.
+    $ &cases(
+        q_0 &= epsilon.alt union a union q_2 b \
+        q_1 &= b union q_0 b \
+        q_2 &= a union q_1 a
+      ) \
+      => &cases(
+        q_0 &= epsilon.alt union a union q_2 b \
+        q_1 &= q_0 b b^* = q_0 b^+ \
+        q_2 &= q_1 a a^* = q_1 a^+
+      ) \
+      => &q_0 = epsilon.alt union a union ((q_0 b^+)a^+)b \
+      => &q_0 = epsilon.alt union a union q_0 b^+ a^+ b \
+      => &q_0 = epsilon.alt union a (b^+ a^+ b)^* $
 
   #automaton(
     (
@@ -71,6 +84,24 @@
       )
     )
   )
-  2. $epsilon.alt | ((a | b) a^ast b ((b a b)^ast | a))^ast$
-  = TODO
+  2. 
+    $ &cases(
+        q_0 &= epsilon.alt union q_2 a \ 
+        q_1 &= a union q_0 (a union b) union q_2 b \
+        q_2 &= q_1 b
+      ) \
+      => &cases(
+        q_0 &= epsilon.alt union q_2 a \ 
+        q_2 &= (a union q_0 (a union b) union q_2 b) b
+      ) \
+      => &cases(
+        q_0 &= epsilon.alt union q_2 a \ 
+        q_2 &= (a union q_0 (a union b)) b union q_2 b b
+      ) \
+      => &cases(
+        q_0 &= epsilon.alt union q_2 a \ 
+        q_2 &= (a union q_0 (a union b)) b(b b)^*
+      ) \
+      $
+      = UNFINISHED
 ]

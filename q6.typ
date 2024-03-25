@@ -2,13 +2,13 @@
 6.
   + Given an alphabet $Sigma$, for any language $L subset.eq Sigma^ast$, prove that $L^(**) = L^*$ and $L^*L^* = L^*$.
 
-    Proof $ L^(**) = L^* $
+    Proof $L^(**) = L^*$
 
     $ because L^*L^* &= L^* \
       therefore L^(**) &= L^*L^* ... L^* \
       &= L^* $
 
-    Proof $ L^*L^* = L^* $
+    Proof $L^*L^* = L^*$
 
     $ L^* L^* &= (L^+ union epsilon.alt)(L^+ union epsilon.alt) \
       &= L L^+ union L^+ union epsilon.alt \

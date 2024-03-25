@@ -13,7 +13,7 @@
 #import "q11.typ": q11
 
 #show: project.with(
-  title: "Formal Language Homework",
+  title: "Formal Language HW1",
   authors: (
       "資工三 110590003 黃政",
   ),

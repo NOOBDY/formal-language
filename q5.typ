@@ -4,4 +4,6 @@
   $ mono("MIN")(L) := {w in L | "no proper prefix of" w "belongs to" L}. $
 
   Prove that if $L$ is regular, then $mono("MIN")(L)$ is regular as well.
+
+  Every proper prefix in any word $w$ can be constructed into a fintie automaton by modifying the original finite automaton regardless of whether it belongs to $L$ or not.
 ]
