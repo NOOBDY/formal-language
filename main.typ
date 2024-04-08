@@ -31,3 +31,9 @@
 #q9
 #q10
 #q11
+
+== References
+
+The entirety of this homework is mostly discussed with 劉蜆皓 #link("mailto:t110590016@ntut.edu.tw")
+
+#link("https://www.overleaf.com/read/ztdgxxgscsny#0523f5")

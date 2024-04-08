@@ -43,6 +43,11 @@
 
   + What about $L^((3))$?
 
+    Not regular,
+
+    $ "Let" L = a b^n \
+    L^((3)) = a b^n a b^n a b^n $
+
   + Let $k in NN$. Prove that there are only finitely many languages of the form $L^((1/k))$ and that they are all regular.
 
   + Is $L^(1/oo)$ regular or not?
@@ -50,4 +55,8 @@
   + Is $sqrt(L)$ regular of not?
 
   + What about $L^oo$?
+
+    Let the number of states be $n$
+
+    $ forall i in NN, n_i = sum_(k=1)^i k $
 ]

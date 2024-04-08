@@ -6,6 +6,14 @@
 
   + Prove by induction on $i$ that $Q^i_r$ is the set of all reachable states from $q_0$ using paths of length $i$.
 
+    Base case:
+
+    $ Q^0_r &:= {q_0} $
+
+    Inductive step:
+
+    $ Q^(i+1)_r &:= {q in Q | exists p in Q^i_r, exists a in Sigma, q = delta(p, a)} $
+
   + Give an example of a `DFA` such that $Q^(i+1)_r != Q^i_r "for all" i >= 0$.
 
   + Change the inductive definition of $Q^i_r$ as follows:

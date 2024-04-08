@@ -19,8 +19,6 @@
 
   3. Conclude that $L(N_1) subset.eq L(N_2)$.
 
-    = WTF?
-
     $ &(q_(01), q_(02)) in phi \
       &forall w in Sigma^ast, hat(delta)_1 (q_(01), w) in F_1 \
       &hat(delta)_2 (q_(02), w) in F_2 $

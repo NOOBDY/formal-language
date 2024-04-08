@@ -31,4 +31,25 @@
       because &2 + 2 = 4 "not a prime" $
 
   + $L = {a^m b^n | gcd(m, n) = 17}$.
+
+    Not regular, proof:
+
+    Let $L = {w = a^(17s)b^(17t) | gcd(s, t) = 1}, p' >= p$
+
+    Let $ w &= a^(17p')b^(17t) = underbrace(a^(p-i), "x") underbrace(a^i, "y") underbrace(a^(17p'-p)b^(17t), "z") \
+    x y^i z &= a^(17p'+(k-1)i)b^(17t) $
+
+    Proof
+    $ exists.not i "s.t." forall k in NN, gcd(17p'+(k-1)i, 17t) = 17$
+
+    Case 1. if $gcd(i, 17) = 1$
+
+    $ gcd(17p'+(k-1)i, 17t) = 1 "when" gcd(k-1, 17) eq.not 17 $
+
+    Case 2. if $gcd(i, 17) = 17$
+
+    Let $i = 17 alpha$
+
+    $ gcd(17(p' + alpha(k-1)), 17t) = 17 \
+    gcd(p' + alpha(k-1), t) = t "when" k = (t - p') / alpha + 1 $
 ]
